@@ -5,6 +5,8 @@ El desafío es construir este componente de la tarjeta y lograr que se parezca l
 - HTML
 - CSS
 
+![desktop-design](https://user-images.githubusercontent.com/112582420/188245178-a9c64253-7feb-4258-8eab-88e888626ee7.jpg)
+
 # Guía de Estilo
 
 ## Diseño
