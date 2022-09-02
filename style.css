@@ -1,0 +1,200 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
+/* ESTILOS CONTAINER */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+/* ESTILOS CARD */
+.card {
+    width: 95%;
+    max-width: 1110px;
+    height: 446px;
+    display: flex;
+    border-radius: 10px;
+}
+
+/* ESTILOS CARD HERO */
+.card_hero {
+    width: 48.6%;
+    height: 100%;
+    background-image: url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    border-radius: 0 10px 10px 0;
+}
+
+.mask_hero {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(94, 0, 144, 0.8);
+    opacity: .7;
+    border-radius: 0 10px 10px 0;
+}
+
+/* ESTILOS ZONA INFORMACIÓN TEXTOS */
+.card_info {
+    width: 51.4%;
+    min-width: 475px;
+    height: 100%;
+    padding: 4.5rem 4.5rem 4rem 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: -1;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px 0 0 10px;
+}
+
+.card_info_header {
+    width: 100%;
+    min-width: 378px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_info_header_title {
+    font-size: 2.24rem;
+    letter-spacing: 0.003rem;
+}
+
+.card_info_header_title span {
+    color: hsl(277, 64%, 61%);
+}
+
+.card_info_header_parag {
+    max-width: 380px;
+    margin-top: 1.5rem;
+    font-size: 0.94rem;
+    font-weight: 200;
+    line-height: 1.55rem;
+    letter-spacing: 0.01rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* ESTILOS FOOTER CARD */
+.card_info_footer {
+    width: 82.3%;
+    min-width: 315px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.card_info_footer h2 {
+    margin-bottom: 6px;
+    font-size: 1.5rem;
+}
+
+.card_info_footer p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .75rem;
+    font-weight: 200;
+    letter-spacing: .09rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+
+    body {
+        height: 100%;
+        min-height: 956px;
+        transition: all .3s ease-out;
+    }
+
+    .container {
+        max-width: none;
+        height: 100%;
+        min-height: 956px;
+        transition: all .3s ease-out;
+    }
+
+    .card {
+        width: 90%;
+        max-width: none;
+        height: 780px;
+        flex-direction: column-reverse;
+    }
+
+    .card_hero {
+        width: 100%;
+        height: 240px;
+        flex-shrink: 0;
+        background-image: url(images/image-header-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .mask_hero {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card_info {
+        min-width: 100%;
+        height: 780px;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .card_info_header {
+        min-width: 350px;
+        height: auto;
+        padding: 0 1.5rem;
+    }
+
+    .card_info_header_title {
+        max-width: 90%;
+        margin-top: 1rem;
+        align-self: center;
+        font-size: 1.7rem;
+    }
+
+    .card_info_header_parag {
+        width: 90%;
+        margin-top: 1rem;
+        align-self: center;
+        font-size: .938rem;
+    }
+
+    .card_info_footer {
+        height: 240px;
+        margin-top: 1.5rem;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
