@@ -29,6 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: hsl(233, 47%, 7%);
+    transition: all .4s ease-in-out;
 }
 
 /* ESTILOS CARD */
@@ -128,14 +129,12 @@ body {
     body {
         height: 100%;
         min-height: 956px;
-        transition: all .3s ease-out;
     }
 
     .container {
         max-width: none;
         height: 100%;
         min-height: 956px;
-        transition: all .3s ease-out;
     }
 
     .card {
