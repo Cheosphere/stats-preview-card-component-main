@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Inter', sans-serif;
-    background-color: rgb(34, 34, 34);
+    background-color: hsl(233, 47%, 7%);
     color: white;
 }
 
@@ -28,7 +28,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(233, 47%, 7%);
     transition: all .4s ease-in-out;
 }
 
